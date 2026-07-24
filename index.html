@@ -3,49 +3,610 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Política de Privacidad - Mi Aplicación</title>
+
+    <title>Política de Privacidad</title>
+
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Política de Privacidad</h1>
 
-    <p><strong>Última actualización:</strong> 23 de julio de 2026</p>
+    <header class="topbar">
+        <div class="brand">
+            <div class="brand-icon">P</div>
 
-    <h2>1. Información general</h2>
-    <p>
-        Esta Política de Privacidad describe cómo nuestra aplicación recopila,
-        utiliza y protege la información de sus usuarios.
-    </p>
+            <div>
+                <h1>Política de Privacidad</h1>
+                <span>Información sobre el tratamiento de datos personales</span>
+            </div>
+        </div>
 
-    <h2>2. Información que recopilamos</h2>
-    <p>
-        La aplicación puede recopilar información necesaria para proporcionar
-        sus funcionalidades, como información de cuenta, datos de uso y otra
-        información proporcionada voluntariamente por el usuario.
-    </p>
+        <div class="header-actions">
+            <button id="themeToggle" class="icon-button" title="Cambiar tema">
+                ☾
+            </button>
 
-    <h2>3. Uso de la información</h2>
-    <p>
-        La información recopilada se utiliza exclusivamente para proporcionar,
-        mantener y mejorar los servicios de la aplicación.
-    </p>
+            <button id="printButton" class="print-button">
+                Imprimir
+            </button>
+        </div>
+    </header>
 
-    <h2>4. Compartición de información</h2>
-    <p>
-        No vendemos ni compartimos información personal con terceros, salvo
-        cuando sea necesario para proporcionar el servicio o cuando sea
-        requerido por la ley.
-    </p>
 
-    <h2>5. Seguridad</h2>
-    <p>
-        Implementamos medidas razonables para proteger la información de los
-        usuarios contra accesos no autorizados.
-    </p>
+    <div class="page-layout">
 
-    <h2>6. Contacto</h2>
-    <p>
-        Si tienes preguntas sobre esta Política de Privacidad, puedes
-        contactarnos en: tu-correo@ejemplo.com
-    </p>
+        <aside class="sidebar">
+
+            <div class="sidebar-title">
+                Contenido
+            </div>
+
+            <nav>
+                <a href="#responsable">1. Responsable del tratamiento</a>
+                <a href="#datos">2. Datos que recopilamos</a>
+                <a href="#finalidad">3. Finalidad del tratamiento</a>
+                <a href="#consentimiento">4. Base legal y consentimiento</a>
+                <a href="#terceros">5. Encargados y terceros</a>
+                <a href="#seguridad">6. Transmisión y seguridad</a>
+                <a href="#retencion">7. Retención y eliminación</a>
+                <a href="#derechos">8. Derechos del Sujeto Escaneado</a>
+                <a href="#menores">9. Menores de edad</a>
+                <a href="#transferencias">10. Transferencias internacionales</a>
+                <a href="#cambios">11. Cambios a esta política</a>
+                <a href="#contacto">12. Contacto</a>
+            </nav>
+
+        </aside>
+
+
+        <main class="content">
+
+            <div class="privacy-header">
+
+                <div>
+                    <span class="badge">DOCUMENTO LEGAL</span>
+
+                    <h2>Política de Privacidad</h2>
+
+                    <p class="last-update">
+                        Última actualización: <strong>[FECHA]</strong>
+                    </p>
+                </div>
+
+                <div class="search-container">
+                    <input
+                        type="text"
+                        id="searchInput"
+                        placeholder="Buscar en la política..."
+                    >
+                </div>
+
+            </div>
+
+
+            <section class="intro">
+
+                <p>
+                    Esta Política de Privacidad describe cómo
+                    <strong>[NOMBRE DE LA EMPRESA]</strong>
+                    ("nosotros", "la Empresa") recopila, usa, almacena y protege
+                    los datos personales y biométricos procesados a través de la
+                    aplicación <strong>[NOMBRE DE LA APP]</strong>
+                    ("la App").
+                </p>
+
+                <p>
+                    La App está diseñada para uso empresarial: permite a
+                    organizaciones clientes ("Clientes") verificar la identidad
+                    de sus empleados, contratistas o visitantes
+                    ("Sujetos Escaneados") mediante reconocimiento facial,
+                    con fines de control de acceso y/o asistencia.
+                </p>
+
+            </section>
+
+
+            <section id="responsable" class="policy-section">
+
+                <h2>
+                    <span class="section-number">01</span>
+                    Responsable del tratamiento
+                </h2>
+
+                <ul class="info-list">
+                    <li>
+                        <strong>Empresa:</strong>
+                        [NOMBRE DE LA EMPRESA]
+                    </li>
+
+                    <li>
+                        <strong>Domicilio:</strong>
+                        [DIRECCIÓN]
+                    </li>
+
+                    <li>
+                        <strong>Correo de contacto para privacidad:</strong>
+                        [privacy@tudominio.com]
+                    </li>
+
+                    <li>
+                        <strong>Delegado de Protección de Datos:</strong>
+                        [NOMBRE / CONTACTO]
+                    </li>
+                </ul>
+
+            </section>
+
+
+            <section id="datos" class="policy-section">
+
+                <h2>
+                    <span class="section-number">02</span>
+                    Datos que recopilamos
+                </h2>
+
+                <div class="table-wrapper">
+
+                    <table>
+
+                        <thead>
+                            <tr>
+                                <th>Categoría</th>
+                                <th>Detalle</th>
+                                <th>Sujeto</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>
+                                    <strong>Datos biométricos</strong>
+                                </td>
+
+                                <td>
+                                    Imagen facial capturada por cámara y/o
+                                    vector/embedding facial derivado de esa imagen.
+                                </td>
+
+                                <td>
+                                    Sujeto Escaneado
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <strong>Datos de identificación</strong>
+                                </td>
+
+                                <td>
+                                    Nombre, identificador interno
+                                    (ej. ID de empleado), correo.
+                                </td>
+
+                                <td>
+                                    Sujeto Escaneado
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <strong>Metadatos de verificación</strong>
+                                </td>
+
+                                <td>
+                                    Fecha, hora, resultado de la verificación
+                                    y ubicación del punto de acceso.
+                                </td>
+
+                                <td>
+                                    Sujeto Escaneado
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <strong>Datos de cuenta</strong>
+                                </td>
+
+                                <td>
+                                    Nombre, correo y rol dentro de la organización.
+                                </td>
+
+                                <td>
+                                    Administrador del Cliente
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <strong>Datos técnicos</strong>
+                                </td>
+
+                                <td>
+                                    Modelo de dispositivo, versión de la App
+                                    y logs de error.
+                                </td>
+
+                                <td>
+                                    Todos los usuarios
+                                </td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+
+                <div class="notice warning">
+
+                    <div class="notice-icon">!</div>
+
+                    <div>
+                        <strong>Información importante</strong>
+
+                        <p>
+                            <strong>No almacenamos</strong>
+                            [imágenes faciales crudas / — ajustar según tu
+                            implementación real].
+                        </p>
+
+                        <p>
+                            Si solo se almacena el vector matemático derivado
+                            de la imagen facial, debe aclararse explícitamente
+                            en esta sección.
+                        </p>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <section id="finalidad" class="policy-section">
+
+                <h2>
+                    <span class="section-number">03</span>
+                    Finalidad del tratamiento
+                </h2>
+
+                <p>
+                    Los datos biométricos se procesan exclusivamente para:
+                </p>
+
+                <ul class="check-list">
+
+                    <li>
+                        Verificar la identidad del Sujeto Escaneado contra
+                        un registro autorizado por el Cliente.
+                    </li>
+
+                    <li>
+                        Permitir o denegar el acceso físico, o registrar
+                        asistencia, según configure el Cliente.
+                    </li>
+
+                </ul>
+
+                <p>
+                    No utilizamos datos biométricos para publicidad,
+                    perfilado comercial, entrenamiento de modelos de terceros
+                    ni para ningún fin distinto al descrito, sin consentimiento
+                    adicional explícito.
+                </p>
+
+            </section>
+
+
+            <section id="consentimiento" class="policy-section">
+
+                <h2>
+                    <span class="section-number">04</span>
+                    Base legal y consentimiento
+                </h2>
+
+                <p>
+                    El tratamiento de datos biométricos requiere el
+                    <strong>consentimiento explícito y previo</strong>
+                    del Sujeto Escaneado, obtenido a través de la pantalla
+                    de autorización dentro de la App antes de cualquier captura.
+                </p>
+
+                <p>
+                    El Cliente, como responsable de enrolar a sus empleados
+                    o visitantes, es responsable de asegurar que dicho
+                    consentimiento se obtenga y documente correctamente.
+                </p>
+
+            </section>
+
+
+            <section id="terceros" class="policy-section">
+
+                <h2>
+                    <span class="section-number">05</span>
+                    Encargados y terceros
+                </h2>
+
+                <p>
+                    Podemos compartir datos con:
+                </p>
+
+                <ul class="bullet-list">
+
+                    <li>
+                        <strong>
+                            [NOMBRE DEL PROVEEDOR DE INFRAESTRUCTURA /
+                            COMPARACIÓN FACIAL]
+                        </strong>
+                        exclusivamente para ejecutar la comparación facial
+                        en servidor.
+                    </li>
+
+                    <li>
+                        <strong>
+                            [PROVEEDOR DE HOSTING / BASE DE DATOS]
+                        </strong>
+                        para almacenamiento seguro.
+                    </li>
+
+                </ul>
+
+                <p>
+                    No compartimos datos biométricos con terceros de
+                    inteligencia artificial ajenos al procesamiento descrito,
+                    ni con fines de entrenamiento de modelos de terceros,
+                    sin consentimiento explícito adicional.
+                </p>
+
+            </section>
+
+
+            <section id="seguridad" class="policy-section">
+
+                <h2>
+                    <span class="section-number">06</span>
+                    Transmisión y seguridad
+                </h2>
+
+                <ul class="security-list">
+
+                    <li>
+                        <span class="security-icon">✓</span>
+
+                        <div>
+                            <strong>Comunicación segura</strong>
+
+                            <p>
+                                Toda comunicación entre la App y nuestros
+                                servidores se realiza mediante TLS 1.2 o superior.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <span class="security-icon">✓</span>
+
+                        <div>
+                            <strong>Cifrado en reposo</strong>
+
+                            <p>
+                                Los datos biométricos se cifran en reposo mediante
+                                [AES-256 / especificar].
+                            </p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <span class="security-icon">✓</span>
+
+                        <div>
+                            <strong>Control de acceso</strong>
+
+                            <p>
+                                El acceso a los datos está restringido mediante
+                                control de acceso basado en roles (RBAC).
+                            </p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <span class="security-icon">✓</span>
+
+                        <div>
+                            <strong>Auditorías de seguridad</strong>
+
+                            <p>
+                                Realizamos [auditorías de seguridad periódicas /
+                                pruebas de penetración — especificar si aplica].
+                            </p>
+                        </div>
+                    </li>
+
+                </ul>
+
+            </section>
+
+
+            <section id="retencion" class="policy-section">
+
+                <h2>
+                    <span class="section-number">07</span>
+                    Retención y eliminación
+                </h2>
+
+                <ul class="bullet-list">
+
+                    <li>
+                        Los datos biométricos se conservan durante
+                        <strong>
+                            [PERIODO]
+                        </strong>
+                        mientras dure la relación laboral o contractual
+                        del Sujeto Escaneado con el Cliente.
+                    </li>
+
+                    <li>
+                        El Sujeto Escaneado puede solicitar la eliminación
+                        de sus datos en cualquier momento a través de
+                        [la App / el correo de contacto].
+                    </li>
+
+                    <li>
+                        Al recibir una solicitud de eliminación, los datos
+                        se eliminan de forma irreversible en un plazo máximo
+                        de [PLAZO].
+                    </li>
+
+                </ul>
+
+            </section>
+
+
+            <section id="derechos" class="policy-section">
+
+                <h2>
+                    <span class="section-number">08</span>
+                    Derechos del Sujeto Escaneado
+                </h2>
+
+                <p>
+                    Según la jurisdicción aplicable, el Sujeto Escaneado tiene
+                    derecho a:
+                </p>
+
+                <ul class="check-list">
+
+                    <li>Acceder a sus datos.</li>
+
+                    <li>
+                        Solicitar corrección de datos inexactos.
+                    </li>
+
+                    <li>
+                        Solicitar eliminación de sus datos biométricos.
+                    </li>
+
+                    <li>
+                        Retirar su consentimiento en cualquier momento.
+                    </li>
+
+                </ul>
+
+                <p>
+                    La retirada del consentimiento puede implicar la pérdida
+                    de acceso mediante reconocimiento facial, ofreciéndose
+                    un método alternativo de verificación.
+                </p>
+
+                <div class="contact-card">
+
+                    <span>Para ejercer estos derechos:</span>
+
+                    <a href="mailto:privacy@tudominio.com">
+                        [privacy@tudominio.com]
+                    </a>
+
+                </div>
+
+            </section>
+
+
+            <section id="menores" class="policy-section">
+
+                <h2>
+                    <span class="section-number">09</span>
+                    Menores de edad
+                </h2>
+
+                <p>
+                    La App no está dirigida a menores de 13 años.
+                    No enrolamos ni procesamos intencionalmente datos biométricos
+                    de menores de 13 años.
+                </p>
+
+                <p class="placeholder">
+                    [Ajustar si tu jurisdicción utiliza otra edad,
+                    por ejemplo 14 o 16 años en la UE].
+                </p>
+
+            </section>
+
+
+            <section id="transferencias" class="policy-section">
+
+                <h2>
+                    <span class="section-number">10</span>
+                    Transferencias internacionales
+                </h2>
+
+                <p class="placeholder">
+                    [Si tus servidores están en un país distinto al del
+                    Cliente o Sujeto Escaneado, describe aquí el mecanismo
+                    legal aplicable].
+                </p>
+
+            </section>
+
+
+            <section id="cambios" class="policy-section">
+
+                <h2>
+                    <span class="section-number">11</span>
+                    Cambios a esta política
+                </h2>
+
+                <p>
+                    Notificaremos cambios materiales a esta política mediante
+                    [aviso dentro de la App / correo a administradores del Cliente]
+                    con al menos [PLAZO] de antelación.
+                </p>
+
+            </section>
+
+
+            <section id="contacto" class="policy-section">
+
+                <h2>
+                    <span class="section-number">12</span>
+                    Contacto
+                </h2>
+
+                <p>
+                    Para preguntas sobre esta política:
+                </p>
+
+                <a
+                    class="email-link"
+                    href="mailto:privacy@tudominio.com"
+                >
+                    [privacy@tudominio.com]
+                </a>
+
+            </section>
+
+
+            <footer class="footer">
+
+                <p>
+                    © <span id="currentYear"></span>
+                    [NOMBRE DE LA EMPRESA].
+                    Todos los derechos reservados.
+                </p>
+
+                <p>
+                    Política de Privacidad
+                </p>
+
+            </footer>
+
+        </main>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
 </body>
 </html>
