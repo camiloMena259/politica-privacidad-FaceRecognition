@@ -6,27 +6,39 @@
 
     <title>Política de Privacidad</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+    <div class="scan-progress" id="scanProgress"></div>
+
     <header class="topbar">
         <div class="brand">
-            <div class="brand-icon">P</div>
+            <div class="brand-mark">
+                <span class="brand-mark-corner tl"></span>
+                <span class="brand-mark-corner tr"></span>
+                <span class="brand-mark-corner bl"></span>
+                <span class="brand-mark-corner br"></span>
+                <span class="brand-mark-glyph">P</span>
+            </div>
 
             <div>
                 <h1>Política de Privacidad</h1>
-                <span>Información sobre el tratamiento de datos personales</span>
+                <span>Tratamiento de datos personales y biométricos</span>
             </div>
         </div>
 
         <div class="header-actions">
-            <button id="themeToggle" class="icon-button" title="Cambiar tema">
+            <button id="themeToggle" class="icon-button" title="Cambiar tema" aria-label="Cambiar tema">
                 ☾
             </button>
 
             <button id="printButton" class="print-button">
-                Imprimir
+                Descargar / Imprimir
             </button>
         </div>
     </header>
@@ -37,22 +49,22 @@
         <aside class="sidebar">
 
             <div class="sidebar-title">
-                Contenido
+                Índice del documento
             </div>
 
             <nav>
-                <a href="#responsable">1. Responsable del tratamiento</a>
-                <a href="#datos">2. Datos que recopilamos</a>
-                <a href="#finalidad">3. Finalidad del tratamiento</a>
-                <a href="#consentimiento">4. Base legal y consentimiento</a>
-                <a href="#terceros">5. Encargados y terceros</a>
-                <a href="#seguridad">6. Transmisión y seguridad</a>
-                <a href="#retencion">7. Retención y eliminación</a>
-                <a href="#derechos">8. Derechos del Sujeto Escaneado</a>
-                <a href="#menores">9. Menores de edad</a>
-                <a href="#transferencias">10. Transferencias internacionales</a>
-                <a href="#cambios">11. Cambios a esta política</a>
-                <a href="#contacto">12. Contacto</a>
+                <a href="#responsable"><span class="nav-index">01</span>Responsable del tratamiento</a>
+                <a href="#datos"><span class="nav-index">02</span>Datos que recopilamos</a>
+                <a href="#finalidad"><span class="nav-index">03</span>Finalidad del tratamiento</a>
+                <a href="#consentimiento"><span class="nav-index">04</span>Base legal y consentimiento</a>
+                <a href="#terceros"><span class="nav-index">05</span>Encargados y terceros</a>
+                <a href="#seguridad"><span class="nav-index">06</span>Transmisión y seguridad</a>
+                <a href="#retencion"><span class="nav-index">07</span>Retención y eliminación</a>
+                <a href="#derechos"><span class="nav-index">08</span>Derechos del Sujeto Escaneado</a>
+                <a href="#menores"><span class="nav-index">09</span>Menores de edad</a>
+                <a href="#transferencias"><span class="nav-index">10</span>Transferencias internacionales</a>
+                <a href="#cambios"><span class="nav-index">11</span>Cambios a esta política</a>
+                <a href="#contacto"><span class="nav-index">12</span>Contacto</a>
             </nav>
 
         </aside>
@@ -62,24 +74,44 @@
 
             <div class="privacy-header">
 
-                <div>
-                    <span class="badge">DOCUMENTO LEGAL</span>
+                <div class="privacy-header-main">
+                    <span class="badge">
+                        <span class="badge-dot"></span>
+                        Documento legal · Verificación biométrica
+                    </span>
 
                     <h2>Política de Privacidad</h2>
 
-                    <p class="last-update">
-                        Última actualización: <strong>[FECHA]</strong>
+                    <p class="intro-lead">
+                        Cómo capturamos, verificamos y protegemos los datos de identidad
+                        utilizados por la App para el control de acceso.
                     </p>
                 </div>
 
                 <div class="search-container">
+                    <label class="search-label" for="searchInput">Buscar en el documento</label>
                     <input
                         type="text"
                         id="searchInput"
-                        placeholder="Buscar en la política..."
+                        placeholder="p. ej. eliminación, consentimiento..."
                     >
                 </div>
 
+            </div>
+
+            <div class="doc-meta">
+                <div class="doc-meta-item">
+                    <span class="doc-meta-label">Documento</span>
+                    <span class="doc-meta-value">Política de privacidad · datos biométricos</span>
+                </div>
+                <div class="doc-meta-item">
+                    <span class="doc-meta-label">Última actualización</span>
+                    <span class="doc-meta-value">[FECHA]</span>
+                </div>
+                <div class="doc-meta-item">
+                    <span class="doc-meta-label">Aplica a</span>
+                    <span class="doc-meta-value">Sujetos Escaneados · Administradores del Cliente</span>
+                </div>
             </div>
 
 
@@ -169,7 +201,7 @@
                                 </td>
 
                                 <td>
-                                    Sujeto Escaneado
+                                    <span class="subject-tag">Sujeto Escaneado</span>
                                 </td>
                             </tr>
 
@@ -184,7 +216,7 @@
                                 </td>
 
                                 <td>
-                                    Sujeto Escaneado
+                                    <span class="subject-tag">Sujeto Escaneado</span>
                                 </td>
                             </tr>
 
@@ -199,7 +231,7 @@
                                 </td>
 
                                 <td>
-                                    Sujeto Escaneado
+                                    <span class="subject-tag">Sujeto Escaneado</span>
                                 </td>
                             </tr>
 
@@ -213,7 +245,7 @@
                                 </td>
 
                                 <td>
-                                    Administrador del Cliente
+                                    <span class="subject-tag subject-tag-alt">Administrador del Cliente</span>
                                 </td>
                             </tr>
 
@@ -228,7 +260,7 @@
                                 </td>
 
                                 <td>
-                                    Todos los usuarios
+                                    <span class="subject-tag subject-tag-alt">Todos los usuarios</span>
                                 </td>
                             </tr>
 

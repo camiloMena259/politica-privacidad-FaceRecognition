@@ -8,6 +8,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const currentYear = document.getElementById("currentYear");
 
+    const scanProgress = document.getElementById("scanProgress");
+
     const sections = document.querySelectorAll(".policy-section");
 
     const navLinks = document.querySelectorAll(".sidebar a");
@@ -153,5 +155,31 @@ document.addEventListener("DOMContentLoaded", () => {
         observer.observe(section);
 
     });
+
+
+    /*
+    |--------------------------------------------------------------------------
+    | BARRA DE PROGRESO DE LECTURA
+    |--------------------------------------------------------------------------
+    */
+
+    const updateScanProgress = () => {
+
+        const scrollTop = window.scrollY;
+
+        const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+
+        const progress = docHeight > 0
+            ? (scrollTop / docHeight) * 100
+            : 0;
+
+        scanProgress.style.width = `${progress}%`;
+
+    };
+
+
+    window.addEventListener("scroll", updateScanProgress, { passive: true });
+
+    updateScanProgress();
 
 });
